@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/shape"
+            android:layout_margin="10dp"
+    android:id="@+id/rlt">
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_height="150dp"
+                android:layout_width="110dp"
+                android:src="@drawable/c1"
+                android:scaleType="fitXY"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/txt"
+                android:text="Head First Java"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:layout_toEndOf="@+id/image"
+
+                android:layout_toRightOf="@+id/image" android:textStyle="bold"/>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/txt"
+                android:id="@+id/author"
+                android:layout_toEndOf="@+id/image"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+
+                android:textSize="17sp"
+                android:layout_toRightOf="@+id/image"
+                android:textColor="@color/colorBlue"
+                android:text="Henry Ford"
+                android:fontFamily="sans-serif"
+                style="@style/AlertDialog.AppCompat.Light"/>
+
+        <TextView
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:id="@+id/urls"
+                android:text="urls"/>
+
+    </RelativeLayout>
+</RelativeLayout>

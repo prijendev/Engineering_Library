@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+
+
+android:orientation="vertical">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2"
+
+            android:id="@+id/first">
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shadow"
+                android:id="@+id/mech"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+
+            <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/mechanical_unpresed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/Mechanical"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:background="@drawable/shadow"
+android:gravity="center"
+                android:id="@+id/com"
+
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+        >
+            <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/computer_unpresed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/Computer">
+            </ImageView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_below="@+id/first"
+
+android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/second">
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/civ"
+                android:background="@drawable/shadow"
+
+                android:layout_below="@+id/com"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+            <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/civil_unpresed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/Civil">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shadow"
+
+
+
+                android:layout_weight="1"
+                android:id="@+id/imt"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+
+        >
+            <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/information_unpresed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/It">
+            </ImageView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_weight="1"
+
+            android:layout_below="@+id/second"
+            android:id="@+id/third">
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shadow"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+
+                android:layout_weight="1"
+                android:layout_below="@+id/imt"
+                android:id="@+id/emc">
+            <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/electronics_unpresed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/Ic">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/shadow"
+                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:layout_below="@+id/imc"
+                android:layout_gravity="right"
+
+                android:id="@+id/rate">
+            <ImageView
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/rateus_unrpesed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/Ec">
+            </ImageView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+    </FrameLayout>
+
+
+</LinearLayout>
