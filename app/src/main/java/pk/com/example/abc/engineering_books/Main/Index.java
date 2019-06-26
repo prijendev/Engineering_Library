@@ -82,9 +82,9 @@ public class Index extends Fragment implements View.OnClickListener
         ec.setOnClickListener(this);
         rate.setOnClickListener(this);
 
-        MobileAds.initialize(con, "ca-app-pub-9328301403988868~9790902642");
+        MobileAds.initialize(con, "##################################");
         mInterstitialAd = new InterstitialAd(con);
-        mInterstitialAd.setAdUnitId("ca-app-pub-9328301403988868/5132692080");
+        mInterstitialAd.setAdUnitId("#####################################");
     }
 
 
