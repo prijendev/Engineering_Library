@@ -87,7 +87,7 @@ private  Toolbar toolbar;
         {
 
             MainActivity.id++;
-            StartAppSDK.init(con, "205722659", true);
+            StartAppSDK.init(con, "############", true);
             startAppAd.loadAd(StartAppAd.AdMode.VIDEO);
 
             startAppAd.showAd(new AdDisplayListener() {
@@ -121,7 +121,7 @@ private  Toolbar toolbar;
         {
             MainActivity.id++;
             MobileAds.initialize(con,
-                    "ca-app-pub-9328301403988868~9790902642");
+                    "######################################");
             mAdView =getView().findViewById(R.id.adView);
             AdRequest adRequest = new AdRequest.Builder().build();
             mAdView.loadAd(adRequest);
