@@ -86,7 +86,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>
         myViewHolder.author.setText("- "+au);
         myViewHolder.urls.setText(url);
         MobileAds.initialize(context,
-                "ca-app-pub-9328301403988868~9790902642");
+                "###################################");
         myViewHolder.rlt.setOnClickListener(new View.OnClickListener()
         {
             @Override
